@@ -4,12 +4,7 @@ class MyDocument extends Document {
     render(){
         return <Html lang="en">
             <Head>
-                <link
-                rel="preload"
-                href="/fonts/IBMPlexSans-Regular.ttf"
-                as="font"
-                crossOrigin="anonymous"
-                ></link>
+            <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
             </Head>
             <body>
                 <Main></Main>

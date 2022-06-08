@@ -31,7 +31,7 @@
 }
 
 .title{
-    font-size: 7vw;
+    font-size: 8vw;
     margin: 80px 0 0 0;
 }
 
@@ -49,210 +49,80 @@
 
 .subTitle{
     margin: 5px 0 0 10px;
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     color: white;
 }
   
-.button {
-    margin: 10px;
-    font-size: 2vw;
-    padding: 12px 4vw;
-    border: none;
-    cursor: pointer;
-    background-color: var(--text-light-brown);
-    color: rgb(255, 255, 255);
-    transition: .2s all;
-    border-radius: 10px;
-    position: relative;
-}
 
-.button:hover{
-    /* animation: 1.5s infinite glow; */
-}
-
-@keyframes glow {
-    0% {
-    box-shadow: 0 0 3px var(--text-brown);
+@media only screen and (max-width: 1200px) {
+    .title{
+        font-size: 10vw;
     }
-    30% {
-    box-shadow: 0 0 30px var(--text-brown);
+
+    .subTitle {
+        font-size: 2vw;
     }
-    100% {
-    box-shadow: 0 0 3px var(--text-brown);
+}
+
+@media only screen and (max-width: 1000px) {
+    .title{
+        font-size: 10vw;
     }
-  }
 
-.drip1{
-    z-index: 5;
-    position: absolute;
-    bottom: 0px;
-    left: 10%;
-    width: 5px;
-    height: 0px;
-    background-color: var(--text-light-brown);
-    border-radius: 0 0px 30px 30px;
-    transition: .7s all;
-}
-
-.button:hover > .drip1 { 
-    height: 60px;
-    bottom: -60px;
-}
-
-.drip2{
-    z-index: 5;
-    position: absolute;
-    bottom: 0px;
-    left: 12%;
-    width: 3px;
-    height: 0px;
-    background-color: var(--text-light-brown);
-    border-radius: 0 0px 30px 30px;
-    transition: .5s all;
-}
-
-.button:hover > .drip2 { 
-    height: 90px;
-    bottom: -90px;
-}
-
-.drip3{
-    z-index: 5;
-    position: absolute;
-    bottom: 0px;
-    left: 30%;
-    width: 7px;
-    height: 0px;
-    background-color: var(--text-light-brown);
-    border-radius: 0 0px 30px 30px;
-    transition: .9s all;
-}
-
-.button:hover > .drip3 { 
-    height: 110px;
-    bottom: -110px;
-}
-
-.drip4{
-    z-index: 5;
-    position: absolute;
-    bottom: 0px;
-    left: 33%;
-    width: 4px;
-    height: 0px;
-    background-color: var(--text-light-brown);
-    border-radius: 0 0px 30px 30px;
-    transition: .7s all;
-}
-
-.button:hover > .drip4 { 
-    height: 50px;
-    bottom: -50px;
-}
-
-.drip5{
-    z-index: 5;
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 7px;
-    height: 0px;
-    background-color: var(--text-light-brown);
-    border-radius: 0 0px 30px 30px;
-    transition: .75s all;
-}
-
-.button:hover > .drip5 { 
-    height: 140px;
-    bottom: -140px;
+    .subTitle {
+        font-size: 3vw;
+    }
 }
 
 
-.drip6{
-    z-index: 5;
-    position: absolute;
-    bottom: 0px;
-    left: 53%;
-    width: 3px;
-    height: 0px;
-    background-color: var(--text-light-brown);
-    border-radius: 0 0px 30px 30px;
-    transition: .9s all;
-}
+@media only screen and (max-width: 750px) {
+    .container {
+        height: 300px;
+    }
 
-.button:hover > .drip6 { 
-    height: 155px;
-    bottom: -155px;
+    .title{
+        font-size: 12vw;
+    }
+
+    .subTitle {
+        font-size: 3.5vw;
+    }
 }
 
 
-.drip7{
-    z-index: 5;
-    position: absolute;
-    bottom: 0px;
-    left: 70%;
-    width: 3px;
-    height: 0px;
-    background-color: var(--text-light-brown);
-    border-radius: 0 0px 30px 30px;
-    transition: .5s all;
-}
+@media only screen and (max-width: 600px) {
+    .title{
+        font-size: 11vw;
+    }
 
-.button:hover > .drip7 { 
-    height: 135px;
-    bottom: -135px;
+    .subTitle {
+        font-size: 3.5vw;
+    }
 }
 
 
-.drip8{
-    z-index: 5;
-    position: absolute;
-    bottom: 0px;
-    left: 73%;
-    width: 4px;
-    height: 0px;
-    background-color: var(--text-light-brown);
-    border-radius: 0 0px 30px 30px;
-    transition: 1s all;
+
+@media only screen and (max-width: 450px) {
+    .container{
+        height: 400px;
+    }
+
+    .title{
+        margin-top: 60px;
+        font-size: 14vw;
+        text-align: center;
+    }
+
+    .subTitle {
+        font-size: 3.5vw;
+    }
+
+    .content {
+        align-items: center;
+    }
+
+
+
+  
 }
 
-.button:hover > .drip8 { 
-    height: 115px;
-    bottom: -115px;
-}
-
-
-.drip9{
-    z-index: 5;
-    position: absolute;
-    bottom: 0px;
-    left: 88%;
-    width: 5px;
-    height: 0px;
-    background-color: var(--text-light-brown);
-    border-radius: 0 0px 30px 30px;
-    transition: .5s all;
-}
-
-.button:hover > .drip9 { 
-    height: 145px;
-    bottom: -145px;
-}
-
-
-.drip10{
-    z-index: 5;
-    position: absolute;
-    bottom: 0px;
-    left: 90%;
-    width: 3px;
-    height: 0px;
-    background-color: var(--text-light-brown);
-    border-radius: 0 0px 30px 30px;
-    transition: .7s all;
-}
-
-.button:hover > .drip10 { 
-    height: 70px;
-    bottom: -70px;
-}

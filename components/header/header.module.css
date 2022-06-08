@@ -20,14 +20,14 @@
     justify-content: center;
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 80px;
 }
 
 .logo {
     color: white;
     font-size: 20px;
     font-weight: 700;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .logo:hover{
@@ -47,6 +47,7 @@
 .link {
     height: 100%;
     width: 70px;
+    padding: 0 20px;
     color: white;
     transition: .2s all;
     display: flex;
@@ -68,3 +69,26 @@
         text-shadow: 0 0 9px var(--text-brown);
     }
   }
+
+@media only screen and (max-width: 750px) {
+    .container{
+        height: 50px;
+    }
+
+    .logoContainer{
+        display: none;
+    }
+
+    .link{
+        font-size: 15px;
+    }
+}
+
+
+
+  
+@media only screen and (max-width: 750px) {
+    .logoContainer{
+        display: none;
+    }
+}
