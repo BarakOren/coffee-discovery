@@ -79,11 +79,13 @@ export default function Home(props) {
     getData()
   }, [latLong, dispatch])
 
-  function scroll(){
-    // setTimeout(() => {
-    //   textRef.current.scrollIntoView({behavior: "smooth"})
-    // }, 1000)
-  }
+
+
+  useEffect(() => {
+    if(textRef.current !== null){
+        textRef.current.scrollIntoView({behavior: "smooth"})
+    }
+  }, [coffeeStores])
 
   return (
     <div className={styles.container}>
@@ -107,7 +109,6 @@ export default function Home(props) {
       <p className={styles.pTwo}>Helping coffee lovers since 2003</p>
       <Button 
       handleOnClick={handleTrackLocation}
-      scroll={scroll}
       />
 
 

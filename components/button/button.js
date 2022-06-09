@@ -2,7 +2,7 @@ import styles from "./button.module.css"
 
 const Button = (props) => {
     return (
-        <div onClick={() => {props.handleOnClick(); props.scroll()}}
+        <div onClick={() => {props.handleOnClick()}}
         className={styles.button} 
         >
             <div className={styles.drip1}></div>
