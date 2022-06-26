@@ -1,19 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Banner from '../components/banner/banner'
-import Header from '../components/header/header'
 import Card from '../components/card/card'
-import coffeeStores from "../data/data.json"
 import { fetchCoffeeStores } from '../lib/coffee-stores'
 import useTrackLocation from '../hooks/use-track-location'
 import {useEffect, useState, useContext, useRef, useCallback} from "react";
 import { ACTION_TYPES, StoreContext} from '../store/store-context'
-import Loader from "../components/loader/loader.js"
-import splash from "../public/static/splash2.png"
-import Button from "../components/button/button.js"
-
-
 
 export async function getStaticProps(context){
   const coffeeStores = await fetchCoffeeStores()
@@ -76,10 +68,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <Banner coffeeStores={coffeeStores} loading={loading} handleOnClick={handleTrackLocation}/>
-
-      {locationErrorMsg && <p>{locationErrorMsg}</p>}
-      {coffeeStoresError && <p>{coffeeStoresError}</p>}
+      <Banner coffeeStoresError={coffeeStoresError} locationErrorMsg={locationErrorMsg} coffeeStores={coffeeStores} loading={loading} handleOnClick={handleTrackLocation}/>
 
       <section>
       {coffeeStores.length > 0 && <h1 ref={textRef} className={styles.nearby}>Best Stores Nearby</h1>}
