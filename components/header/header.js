@@ -12,10 +12,10 @@ const CofffeIcon = styled(CoffeeTogo)`
 
 const Header = () => {
     return(
-        <div className={styles.container}>
+        <header className={styles.container}>
                 <Link href="/"><a className={styles.link}>Home</a></Link>
                 <p className={styles.link}>About</p>
-        </div>
+        </header>
     )
 }
 

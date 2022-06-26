@@ -7,6 +7,7 @@
     align-items: flex-start;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -60,59 +61,83 @@
 
 @media only screen and (max-width: 1200px) {
     .title{
-        font-size: 10vw;
+        font-size: 3.3em;
     }
 
     .subTitle {
-        font-size: 2vw;
+        font-size: 1.7em;
+    }
+
+    .circle{
+        background-position: 0% 50%;
+        background-size: 60%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .title{
-        font-size: 10vw;
+        font-size: 3.6em;
     }
 
     .subTitle {
-        font-size: 3vw;
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .circle{
+        border-radius: 50%;
+        height: 130%;
+        right: -30%;
+        background-size: 70%;
     }
 }
 
 
 @media only screen and (max-width: 750px) {
+
     .container {
-        height: 300px;
+        justify-content: center;
+    }
+
+    .content{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        text-shadow: 3px 3px 10px var(--new-design-grey); 
     }
 
     .title{
-        font-size: 12vw;
+        font-size: 3.5em;
     }
 
     .subTitle {
-        font-size: 3.5vw;
+        font-size: 2em;
+        width: 100%;
+    }
+
+    .circle{
+        background-image: none;
     }
 }
 
 
 @media only screen and (max-width: 600px) {
     .title{
-        font-size: 11vw;
+        font-size: 3.7em;
     }
 
     .subTitle {
-        font-size: 3.5vw;
+        font-size: 2.5em;
     }
 }
 
 
 
 @media only screen and (max-width: 450px) {
-    .container{
-        height: 400px;
-    }
+
 
     .title{
-        margin-top: 60px;
         font-size: 14vw;
         text-align: center;
     }

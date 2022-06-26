@@ -2,7 +2,7 @@
     z-index: 2;
     position: absolute;
     left: 15%;
-    top: 10%;
+    top: 9%;
     margin: 0;
     height: 70px;
     display: flex;
@@ -27,15 +27,11 @@
 text-shadow: 0 0 3px rgb(0, 0, 0, 0.5);
 }
 
-@keyframes glow {
-    from {
-      text-shadow: 0 0 0px var(--text-brown);
+@media only screen and (max-width: 1000px) {
+    .container{
+        left: 20%;
     }
-  
-    to {
-        text-shadow: 0 0 9px var(--text-brown);
-    }
-  }
+}
 
 @media only screen and (max-width: 750px) {
     .container{

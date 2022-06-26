@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  min-height: 130vh;
   width: 100%;
 }
 
@@ -11,6 +10,7 @@
   width: 101vw;
   display: grid;
   flex-direction: column;
+  gap: 30px;
   grid-template-columns: 100%;
 }
 
@@ -25,13 +25,19 @@
 
 @media only screen and (max-width: 1200px) {
   .nearby{
-    font-size: 5vw;
+    font-size: 5.5em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nearby{
+    font-size: 5em;
   }
 }
 
 
 @media only screen and (max-width: 750px) {
   .nearby{
-    font-size: 7vw;
+    font-size: 3.7em;
   }
 }

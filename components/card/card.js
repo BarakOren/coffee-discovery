@@ -12,7 +12,7 @@ const Card = (props) => {
                 backgroundImage: `url(${imgUrl})`,
                 justifySelf: index % 2 === 0 ? "end" : "start",
                 borderRadius: index % 2 === 0 ? "200px 0 0 200px" : "0 200px 200px 0",
-                backgroundPosition: index % 2 === 0 ? "0% 50%" : "100% 0%",
+                backgroundPosition: index % 2 === 0 ? "0%" : "100%",
                 justifyContent: index % 2 === 0 ? "flex-end" : "flex-start"
                 }}>
             {/* <Image className={styles.image} src={imgUrl} width={500} height={300} /> */}

@@ -1,12 +1,12 @@
 import '../styles/globals.css'
 import { createContext, useReducer } from 'react';
 import StoreProvider from '../store/store-context';
-import Header from "../components/header/header.js"
+import Logo from '../components/logo/logo';
 
 function MyApp({ Component, pageProps }) {
   return ( 
     <StoreProvider>
-      {/* <Header /> */}
+      <Logo /> 
       <Component {...pageProps} />
     </StoreProvider>
   )
