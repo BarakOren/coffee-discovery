@@ -13,14 +13,8 @@ const CofffeIcon = styled(CoffeeTogo)`
 const Header = () => {
     return(
         <div className={styles.container}>
-            <div className={styles.logoContainer}>
-                {/* <CofffeIcon /> */}
-                <p className={styles.logo}>Coffee Discovery</p>
-            </div>
-            <div className={styles.links} >
                 <Link href="/"><a className={styles.link}>Home</a></Link>
                 <p className={styles.link}>About</p>
-            </div>
         </div>
     )
 }

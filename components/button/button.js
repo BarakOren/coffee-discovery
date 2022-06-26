@@ -1,21 +1,17 @@
 import styles from "./button.module.css"
+import Loader from "../loader/loader";
 
 const Button = (props) => {
+    const {coffeeStores, loading, handleOnClick} = props
     return (
-        <div onClick={() => {props.handleOnClick()}}
+        <button onClick={() => {handleOnClick()}} 
         className={styles.button} 
+        disabled={coffeeStores.length > 0}
         >
-            <div className={styles.drip1}></div>
-            <div className={styles.drip2}></div>
-            <div className={styles.drip3}></div>
-            <div className={styles.drip4}></div>
-            <div className={styles.drip5}></div>
-            <div className={styles.drip6}></div>
-            <div className={styles.drip7}></div>
-            <div className={styles.drip8}></div>
-            <div className={styles.drip9}></div>
-            <div className={styles.drip10}></div>
-            Lets Discover</div>
+            {loading && <Loader />}
+            {!loading && coffeeStores.length === 0 && "Discover"}
+            {coffeeStores.length > 0 && "scroll down.."}        
+        </button>
     )
 }
 

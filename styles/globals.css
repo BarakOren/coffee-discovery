@@ -3,14 +3,17 @@
   --text-brown: rgb(245, 176, 73);
   --text-dark-brown: rgb(116, 75, 13);
   --text-darker-brown: rgb(24, 15, 0);
-  --button-darker-brown: rgb(24, 15, 0);
+  --button-darker-brown: rgb(156, 148, 134);
   --grey-bg: #13131b;
+  --new-design-grey: #282828;
+  --new-design-yellow: #F2D895;
+  --new-design-pink: #D873C8;
 }
 
 html,
 body {
   /* background-image: linear-gradient(to right, #372505, #4a2f0d, #5f3a14, #75431d, #8d4d27); */
-  background-color: white;
+  background-color: #E0E0E0;
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;

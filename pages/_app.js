@@ -6,7 +6,7 @@ import Header from "../components/header/header.js"
 function MyApp({ Component, pageProps }) {
   return ( 
     <StoreProvider>
-      <Header />
+      {/* <Header /> */}
       <Component {...pageProps} />
     </StoreProvider>
   )

@@ -1,19 +1,34 @@
-
 .button {
-    margin: 10px;
-    font-size: 2vw;
-    padding: 12px 4vw;
+    margin-top: 10px;
+    font-size: 2em;
+    padding: 12px 0;
+    width: 40%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border: none;
     cursor: pointer;
-    background-color: var(--text-darker-brown);
+    background-color: var(--new-design-pink);
     color: rgb(255, 255, 255);
     transition: .2s all;
     border-radius: 10px;
-    position: relative;
+    box-shadow: 15px 15px 20px rgb(0,0,0,0.5);
 }
 
 .button:hover{
-    /* animation: 1.5s infinite glow; */
+    transform: translate(-3px, -3px);
+    box-shadow: 18px 18px 20px rgb(0,0,0,0.5);
+}
+
+.button:disabled{
+    font-size: 1.5em;
+}
+
+.button:disabled:hover {
+    transform: none;
+    box-shadow: 15px 15px 20px rgb(0,0,0,0.5);
 }
 
 @keyframes glow {

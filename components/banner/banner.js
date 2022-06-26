@@ -1,19 +1,21 @@
 import styles from "./banner.module.css"
-import Button from "../button/button.js"
+import Header from "../header/header"
+import Button from "../button/button"
 
 const Banner = (props) => {
 
     return(
         <div className={styles.container}>
-            {/* <div className={styles.fade}/> */}
-            <div className={styles.content}>
+            <div className={styles.circle}>
+                <Header />
+            </div>
+            <div className={styles.content} >
             <h1 className={styles.title}>
-                <span className={styles.title1}>Coffee </span>
-                <span className={styles.title2}>Discovery</span>
+                IMPROVE THE WAY COFFEE TASTES
             </h1>
-            <p className={styles.subTitle}>Discover your local coffee shops</p>
+            <p className={styles.subTitle}>Discover The Best Coffee Nearby</p>
             <div className={styles.buttonWrapper}>
-            {/* <Button handleOnClick={props.handleOnClick}/> */}
+                <Button coffeeStores={props.coffeeStores} loading={props.loading} handleOnClick={props.handleOnClick}/>
             </div>
             </div>
         </div>
