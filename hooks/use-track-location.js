@@ -11,7 +11,6 @@ const useTrackLocation = () => {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
     
-        // setLatLong(`${latitude},${longitude}`)
         dispatch({
             type: ACTION_TYPES.SET_LAT_LONG,
             payload: {latLong: `${latitude},${longitude}`}
@@ -22,22 +21,20 @@ const useTrackLocation = () => {
 
     const error = () => {
         setIsFindingLocation(false)
-        setLocationErrorMsg("Unable to retrieve your location")
+        setLocationErrorMsg("no access")
     }
 
     const handleTrackLocation = () => {
         setIsFindingLocation(true)
         if(!navigator.geolocation) {
             setIsFindingLocation(false)
-            setLocationErrorMsg('Geolocation is not supported by your browser')
+            setLocationErrorMsg('not supported')
           } else {
-            // status.textContent = 'Locating…';
             navigator.geolocation.getCurrentPosition(success, error);
           }
     }
 
     return{
-        // latLong,
         handleTrackLocation,
         locationErrorMsg,
         isFindingLocation

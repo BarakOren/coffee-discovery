@@ -15,11 +15,10 @@ const Card = (props) => {
                 backgroundPosition: index % 2 === 0 ? "0%" : "100%",
                 justifyContent: index % 2 === 0 ? "flex-end" : "flex-start"
                 }}>
-            {/* <Image className={styles.image} src={imgUrl} width={500} height={300} /> */}
-            <div className={styles.details} >
-            <h1 className={styles.name}>{name}</h1>
-            <p className={styles.address}>{address}</p>
-            </div>
+                <div className={styles.details} >
+                    <h1 className={styles.name}>{name}</h1>
+                    <p className={styles.address}>{address}</p>
+                </div>
             </a>
         </Link>
     )
