@@ -15,7 +15,7 @@ const Banner = (props) => {
                 <div className={styles.buttonWrapper}>
                     <Button coffeeStores={coffeeStores} loading={loading} handleOnClick={handleOnClick}/>
                     {coffeeStoresError && <a className={styles.error}>{coffeeStoresError}</a>}
-                    {locationErrorMsg === "no access" && <p className={styles.error}>You have to let us access your location, please visit <a href="https://www.lifewire.com/denying-access-to-your-location-4027789" target="_blank">this link</a></p>}
+                    {locationErrorMsg === "no access" && <p className={styles.error}>You have to let us access your location, please visit <a rel="noreferrer" href="https://www.lifewire.com/denying-access-to-your-location-4027789" target="_blank">this link</a></p>}
                     {locationErrorMsg === "not supported" && <p className={styles.error}>We are sorry, it seems that your browser is not supporting geolocation.</p>}
                 </div>
             </div>
